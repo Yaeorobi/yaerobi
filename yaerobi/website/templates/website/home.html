@@ -1,0 +1,206 @@
+{% extends 'website/base.html' %}
+
+{% block title %}Yaeorobi - We're open source{% endblock %}
+
+{% block body %}
+
+{% load static %}
+  <!-- Page Content
+    ================================================== -->
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container text-center">
+      <div class="row">
+      </div>
+      <div class="col-md-12">
+        <h1>The Power of Open Source </h1>
+        <p class="tagline">
+          You play with Open Source and let us help you!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- /Hero -->
+
+  <!-- Header -->
+  <header id="header">
+    {% if messages %}
+      {% for message in messages %}
+          <script>alert("Thanks for contact us. We will contact you soon.")</script>
+      {% endfor %}
+    {% endif %}
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="img/logo-nav.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#softwarelibre">Free & Open Source</a></li>
+          <!-- <li><a href="#team">Team</a></li>-->
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container
+      <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav>
+    </div>
+    -->
+  </header>
+
+  <!-- #header -->
+
+ <!-- About -->
+<section class="about" id="about">
+    <div class="container">
+      <div class="text-center">
+            <h2>
+                About us
+            </h2>
+        </div>
+      <div class="row about-us">
+        <div class="about-us text-justify col-md-8 col-sm-12">
+          <p>
+             We are convinced that open source is the best solution for the industry and governments. Biggest business are already using and contributing to open source, the open source is a fact.
+          </p>
+          <p>
+            Our goal is to actively contribute to Open Source projects and to the Open Community. We maintain several projects and generating new Open Source Projects.
+          </p>
+          <p>
+            For this reason we know from the lines of code of the Open Source Softwares that we maintain, so who is better than us to help you with your project?.
+          </p>
+        </div>
+        <div class="about-us text-justify col-md-4 col-sm-12 tuxy">
+          <img src='{% static "img/tux.png" %}' alt="" title=""></img>
+        </div>
+      </div>    
+  </section>
+
+  <section class="portfolio" id="services">
+    <div class="container">
+      <div class="text-center">
+            <h2>
+                Services
+            </h2>
+        </div>
+
+       <div class="row portfolio">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">Train</div>
+        </div>
+        <div class="portfolio text-justify col-md-8 col-sm-12">
+            <p><h4>
+                We want to share our experience and we want to create the Open Source culture on the people and organizations, for that reason we are open to offer open-free-software-tools courses. 
+            </h4></p>
+        </div>
+      </div>
+
+      <div class="row portfolio">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">Build & Optimize</div>
+        </div>
+        <div class="portfolio text-justify col-md-8 col-sm-12">
+            <p><h4>
+                We have the knowledge from the lines of the code of the projects that we maintain. So we can help you to develop, build and optimize your projects. We have experiencies on Python, Javascript, C/C++, PHP and more ...
+            </h4></p>
+        </div>
+      </div>
+
+      <div class="row portfolio">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">Maintain</div>
+        </div>
+        <div class="portfolio text-justify col-md-8 col-sm-12">
+            <p><h4>
+                Develop a project is a hard and demanding task and take several hours of people. Maintain a project or package is still a demanding task. We work every day maintaining open source projects, we can help you on that task.
+            </h4></p>
+        </div>
+      </div>
+
+      <div class="row portfolio">
+        <div class="stats-col text-center col-md-3 col-sm-6">
+          <div class="circle">Packaging</div>
+        </div>
+        <div class="portfolio text-justify col-md-8 col-sm-12">
+            <p><h4>
+              We have experience on Debian Packaging, we can package your software and tools to be ready for distribute and deploy.
+            </h4></p>
+        </div>
+      </div>
+      <div class="portfolio text-center col-md-12 col-sm-12 logos center">
+        <img src='{% static "img/logos.jpg" %}' alt="logos" title="We have experience on this"></img>
+        </div>
+      </div>
+  </section> 
+  <!-- /About -->
+
+  <!-- Open and Free Software -->
+<section class="feature" id="softwarelibre">
+    <div class="container">
+      <div class="text-center">
+            <h2>
+                Free & Open Source
+            </h2>
+        </div>
+
+       <div class="row feature">
+        <div class="feature text-justify col-md-12 col-sm-12">
+            <p><h3>
+                We are compromised to Free and Open Source
+            </h3></p>
+            <p><h4>
+                <a href="https://www.openhub.net/accounts/eamanu">OpenHub</a>
+            </h4></p>
+            <p><h4>
+                <a href="http://github.com/eamanu">GitHub</a>
+            </h4></p>
+            <p><h4>
+                <a href="https://qa.debian.org/developer.php?login=emmanuelarias30%40gmail.com">Debian</a>
+            </h4></p>
+        </div>
+      </div>
+  </section> 
+  <!-- /Open and Free Software --> 
+
+  <!-- Open and Free Software -->
+  <section class="feature" id="contact">
+    <div class="container">
+      <div class="text-center">
+            <h2>
+                Contact Us
+            </h2>
+      </div>
+      <h3>Send an email to <a href="mailto:eamanu@eamanu.com">eamanu@eamanu.com</a> or complete the form:</h3>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </section> 
+  <!-- /Open and Free Software -->  
+  <!-- Parallax -->
+
+  <!-- Required JavaScript Libraries -->
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="static/lib/superfish/hoverIntent.js"></script>
+  <script src="static/lib/superfish/superfish.min.js"></script>
+  <script src="static/lib/tether/js/tether.min.js"></script>
+  <script src="static/lib/stellar/stellar.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/lib/counterup/counterup.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <script src="static/lib/easing/easing.js"></script>
+  <script src="static/lib/parallax/parallax.js"></script>
+  <script src="static/lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="static/js/custom.js"></script>
+{% endblock %}
