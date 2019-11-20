@@ -1031,3 +1031,18 @@ div.logos > img{
   max-width: 60%;
   max-height: 60%;
 }
+
+
+.carousel{
+    /*background: #194616;*/
+    background: #000;
+    margin-top: 20px;
+    width: 100%;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.bs-example{
+	margin: 20px;
+}
