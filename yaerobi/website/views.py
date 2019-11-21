@@ -25,6 +25,7 @@ def index(request):
     
     return render(request, 'website/home.html', {'form': form})
 
+
 def get_time(request):
     if request.method == 'GET':
         tz = pytz.timezone('America/Argentina/Buenos_Aires')
