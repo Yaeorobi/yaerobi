@@ -1035,7 +1035,7 @@ div.logos > img{
 
 .carousel{
     /*background: #194616;*/
-    background: #000;
+    background: #edf6ff;
     margin-top: 20px;
     width: 100%;
 }
@@ -1048,13 +1048,36 @@ div.logos > img{
 }
 
 .slide{
-
+  max-width: 100%
 }
-
 
 .messages {
   position: fixed;
   top: 0;
   left: 0;
   width: 80%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }
