@@ -1046,3 +1046,15 @@ div.logos > img{
 .bs-example{
 	margin: 20px;
 }
+
+.slide{
+
+}
+
+
+.messages {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+}

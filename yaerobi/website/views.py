@@ -6,6 +6,8 @@ from django.core.mail import send_mail
 from django.contrib import messages
 from django.http import JsonResponse
 
+from django.contrib import messages
+
 import pytz
 from datetime import datetime
 
@@ -17,8 +19,12 @@ def index(request):
             sender_name = form.cleaned_data['name']
             sender_email = form.cleaned_data['email']
 
-            message = "{0} has sent you a new message:\n\n{1}".format(sender_name, form.cleaned_data['message'])
-            send_mail('New Enquiry', message, sender_email, ['eamanu@eamanu.com' , 'emmanuelarias30@gmail.com'], fail_silently=False)
+            message = "{0} - {1} has sent you a new message:\n\n{2}".format(sender_name, sender_email, form.cleaned_data['message'])
+            send_mail('New Enquiry', message, sender_email, ['eamanu@yaerobi.com'], fail_silently=False)
+
+            messages.success(request, "Message sent successfully. We will contact you soon. Thanks!")
+
+
             return render(request, 'website/home.html')
     else:
         form = ContactForm()
