@@ -1,6 +1,6 @@
 Django
 pytz==2019.1
-sqlparse==0.3.0
+sqlparse==0.4.4
 django-bootstrap3
 djangorestframework
 django-cors-headers
